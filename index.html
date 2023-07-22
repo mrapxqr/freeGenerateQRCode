@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>QRCodeGen</title>
+    <title>QRCodeGenerator</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
     <style>
@@ -24,19 +24,19 @@
 
 <body>
     <div class="container-fluid xixi bg-primary pt-5 text-center text-white">
-        <h2>QRCode Generator by Uta</h2>
-        <span>Generate Link/Text Menjadi Kode QR</span>
+        <h2>QR Code Generator by Uta</h2>
+        <span>Bebas Create Kode QR Dalam Bentuk Apapun</span>
     </div>
     <div class="container xixi2 d-flex justify-content-center">
         <div class="col-lg-4 p-3 bg-white shadow">
             <div class="input-group mb-3">
-                <input type="text" class="form-control rounded-0 shadow-none" placeholder="Url or Text : www.google.com/contoh/"
+                <input type="text" class="form-control rounded-0 shadow-none" placeholder="enter: url, text dan Apapun"
                     aria-describedby="btn" id="input">
                 <button class="btn btn-primary rounded-0 shadow-none" id="btn">Buat</button>
             </div>
             <div class="plc text-center mt-4">
                 <b>OUTPUT</b><br>
-                <span>qrcode akan muncul disini!</span>
+                <span>kode akan muncul disini!</span>
             </div>
             <div class="d-flex justify-content-center py-3">
                 <div id="qrcode"></div>
@@ -66,7 +66,7 @@
             var text = $('#input').val()
             qrcode.makeCode(text);
             
-            alert('Apa kamu yakin ingin generate link/text ini?, dan untuk mengunduhnya silahkan tekan dan tahan gambar qrcode, lalu save image. Nuhun:)')
+            alert('Siap untuk buat kode qr?, dan untuk mendownload kodeQR silahkan tekan dan tahan gambar qrcode, lalu save image. Nuhun:)')
         })
     </script>
 </body>
